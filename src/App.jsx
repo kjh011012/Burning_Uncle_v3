@@ -1096,7 +1096,7 @@ const MobileTop = ({ activePage, onNavigate }) => {
             ))}
           </div>
           <button type="button" className="burn-category-close" onClick={() => setCategoryOpen(false)} aria-label="카테고리 닫기">
-            <Icon name="x" size={34} color="#111" />
+            <Icon name="x" size={20} />
           </button>
         </div>
       ) : null}
