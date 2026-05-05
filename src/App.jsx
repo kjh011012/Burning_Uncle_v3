@@ -1095,8 +1095,22 @@ const MobileTop = ({ activePage, onNavigate }) => {
               </button>
             ))}
           </div>
-          <button type="button" className="burn-category-close" onClick={() => setCategoryOpen(false)} aria-label="카테고리 닫기">
-            <Icon name="x" size={20} />
+          <button
+            type="button"
+            className="burn-category-close burn-category-close-top"
+            style={{
+              top: 'calc(env(safe-area-inset-top) + 12px)',
+              right: 12,
+              bottom: 'auto',
+              left: 'auto',
+              width: 34,
+              height: 34,
+              transform: 'none',
+            }}
+            onClick={() => setCategoryOpen(false)}
+            aria-label="카테고리 닫기"
+          >
+            <Icon name="x" size={18} />
           </button>
         </div>
       ) : null}
